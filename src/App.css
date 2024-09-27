@@ -1,0 +1,146 @@
+/* ui */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  width: 100%;
+}
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.808);
+  padding: 10px 20px;
+  color: white;
+}
+.nav-bar h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+input {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+}
+button {
+  padding: 5px 10px;
+  color: orangered;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* HOme/TOP rated/upcoming */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+.cine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 20px;
+}
+.clip {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.clip img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.clip h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  
+}
+.movieworld {
+  padding: 20px;
+  text-align: center;
+}
+h2 {
+  margin-top: 20px;
+}
+
+/* ui */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .nav-list {
+    margin: 10px 0;
+  }
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input, button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 10px;
+  }
+  .nav-bar h3 {
+    font-size: 20px;
+  }
+  input {
+    font-size: 14px;
+  }
+  button {
+    font-size: 14px;
+  }
+}
+/* HOme/TOP rated/upcoming */
+@media (max-width: 768px) {
+  .clip {
+    width: 150px;
+  }
+  .clip h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .clip {
+    width: 100%;
+  }
+  .cine {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
